@@ -15,6 +15,6 @@ Each of the following repos and links share the same commit history with this re
 ## Helpers
 
 - [starter](https://github.com/ga-dc/tunr-rails-helpers/tree/master)
-- - [starter](https://github.com/ga-dc/tunr-rails-helpers/tree/solution)
+- [solution](https://github.com/ga-dc/tunr-rails-helpers/tree/solution)
 
 ## Routing and Resources
