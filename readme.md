@@ -18,3 +18,8 @@ Each of the following repos and links share the same commit history with this re
 - [solution](https://github.com/ga-dc/tunr-rails-helpers/tree/solution)
 
 ## Routing and Resources
+
+## Sessions and Authentication
+
+- [starter](https://github.com/ga-dc/tunr-rails-sessions-and-authentication/tree/master)
+- [solution](https://github.com/ga-dc/tunr-rails-sessions-and-authentication/tree/solution)
