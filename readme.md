@@ -21,5 +21,5 @@ Each of the following repos and links share the same commit history with this re
 
 ## Sessions and Authentication
 
-- [starter](https://github.com/ga-dc/tunr-rails-sessions-and-authentication/tree/master)
-- [solution](https://github.com/ga-dc/tunr-rails-sessions-and-authentication/tree/solution)
+- [starter](https://github.com/ga-dc/tunr_rails_sessions_devise/tree/master)
+- [solution](https://github.com/ga-dc/tunr_rails_sessions_devise/tree/solution)
