@@ -92,4 +92,7 @@
  span.nationality {
    font-size: .5em;
  }
->>>>>>> Stashed changes
+
+.user-info {
+  float: right;
+}
