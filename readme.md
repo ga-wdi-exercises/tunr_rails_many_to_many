@@ -19,7 +19,15 @@ Each of the following repos and links share the same commit history with this re
 
 ## Routing and Resources
 
+- [starter](https://github.com/ga-dc/tunr_rails_routes_resources)
+- [solution](https://github.com/ga-dc/tunr_rails_routes_resources/tree/solution)
+
 ## Sessions and Authentication
 
 - [starter](https://github.com/ga-dc/tunr_rails_sessions_devise/tree/master)
 - [solution](https://github.com/ga-dc/tunr_rails_sessions_devise/tree/solution)
+
+## Many-to-Many
+
+- [starter](https://github.com/ga-dc/tunr_rails_many_to_many/tree/favorites-starter)
+- [solution](https://github.com/ga-dc/tunr_rails_many_to_many/tree/favorites-solution)
