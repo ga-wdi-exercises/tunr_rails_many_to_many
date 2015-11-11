@@ -96,3 +96,17 @@
 .user-info {
   float: right;
 }
+
+a.fav {
+  text-decoration: none;
+  color: red;
+}
+
+a.no-fav {
+  text-decoration: none;
+  color: black;
+}
+
+.fav:visited, .no-fav:visited {
+  text-decoration: none;
+}
