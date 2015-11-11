@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :songs do
     member do
       post 'add_favorite'
-      post 'remove_favorite'
+      delete 'remove_favorite'
     end
   end
 end

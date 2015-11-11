@@ -9,7 +9,7 @@
     <li>
       <%= link_to "#{song.title} (#{song.album})", artist_song_path(@artist, song) %>
       <% if song.favorites.length > 0 %>
-        <%= link_to "&hearts;".html_safe, remove_favorite_song_path(song), method: :post, class: "fav" %>
+        <%= link_to "&hearts;".html_safe, remove_favorite_song_path(song), method: :delete, class: "fav" %>
       <% else %>
         <%= link_to "&hearts;".html_safe, add_favorite_song_path(song), method: :post, class: "no-fav" %>
       <% end %>
