@@ -2,6 +2,8 @@
 
 <form action="/songs/<%= @song.id %>" method="post">
   <input type="hidden" name="_method" value="put">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
 
   <label for="song[title]">Title:</label>
   <input name="song[title]" value="<%= @song.title %>">
