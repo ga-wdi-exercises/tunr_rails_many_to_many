@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'artists#index'
-  get '/songs', to: 'songs#index'
+
   resources :artists do
-    resources :songs
-    resources :genres
+    resources :songs, except: [:index, :show]
   end
 
-  resources :songs do
+  resources :songs, only: [:index, :show] do
     member do
       post 'add_favorite'
       delete 'remove_favorite'
