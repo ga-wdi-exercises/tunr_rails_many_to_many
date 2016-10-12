@@ -1,4 +1,4 @@
-<h2><%= @song.title %> <a href="/songs/<%= @song.id %>/edit">(edit)</a></h2>
+<h2><%= @song.title %> <%= link_to "(edit)", edit_artist_song_path(@song.artist, @song)  %> </h2>
 <h3>By: <%= @song.artist.name %></h3>
 
 Album: <%= @song.album %></br>
