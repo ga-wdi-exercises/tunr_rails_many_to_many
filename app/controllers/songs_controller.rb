@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+  before_action :authenticate_user!, only: [:add_favorite, :remove_favorite]
   # index
   def index
     @songs = Song.all
@@ -40,6 +41,17 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
     @song.destroy
     redirect_to songs_path
+  end
+
+  def add_favorite
+    @song = Song.find(params[:id])
+    @song.favorites.create(user: current_user)
+    redirect_to :back
+  end
+
+  def remove_favorite
+    Favorite.where(user: current_user).destroy_all
+    redirect_to :back
   end
 
   private
