@@ -50,7 +50,7 @@ class SongsController < ApplicationController
   end
 
   def remove_favorite
-    Favorite.where(user: current_user, song_id: params[:id]).destroy_all
+    Favorite.find_by(user: current_user, song_id: params[:id]).destroy
     redirect_to :back
   end
 
