@@ -1,3 +1,3 @@
-class Artist < ActiveRecord::Base
+class Artist < ApplicationRecord
   has_many :songs, dependent: :destroy
 end
