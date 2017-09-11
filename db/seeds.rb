@@ -33,3 +33,11 @@ song_data.each_pair do |artist_name, songs|
     })
   end
 end
+
+# Create Users
+(1..100).each do |i|
+  User.create!(
+    email: "user_#{i}@generalassemb.ly",
+    password: "12345678"
+  )
+end
