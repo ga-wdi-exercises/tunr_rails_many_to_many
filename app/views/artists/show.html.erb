@@ -9,10 +9,12 @@
     <li>
       <%= link_to "#{song.title} (#{song.album})", song_path(song) %>
       <!-- Note: will throw an error without proper model definitions + associations  -->
-      <% if song.users.include? current_user %>
-        <%= link_to "&hearts;".html_safe, remove_favorite_song_path(song), method: :delete, class: "fav" %>
-      <% else %>
-        <%= link_to "&hearts;".html_safe, add_favorite_song_path(song), method: :post, class: "no-fav" %>
+      <% if current_user %>
+        <% if song.users.include? current_user %>
+          <%= link_to "&hearts;".html_safe, remove_favorite_song_path(song), method: :delete, class: "fav" %>
+        <% else %>
+          <%= link_to "&hearts;".html_safe, add_favorite_song_path(song), method: :post, class: "no-fav" %>
+        <% end %>
       <% end %>
     </li>
 
